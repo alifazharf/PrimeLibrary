@@ -1,0 +1,53 @@
+body{
+    background: white;
+    font-family: sans-serif;
+}
+#kotak{
+    width: 520px;
+    height: 250px;
+    background: #fff;
+    margin: 200px auto 100px auto;
+    color: cadetblue;
+}
+#atas{
+    height: 35px;
+    width: 520px;
+    text-align: center;
+    font-size: 15pt;
+    padding-top: 20px;
+}
+#bawah{
+    height: 200px;
+    width: 520px;
+}
+.masuk{
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 60px;
+    font-size: 12pt;
+    border: 1px solid blue;
+}
+.masuk:focus{
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 60px;
+    font-size: 12pt;
+    padding-left: 10px;
+    color: darkorange;
+    outline: none;
+    box-shadow: 0 0 5px green;
+}
+#tombol{
+    width: 400px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 60px;
+    background: darkslateblue;
+    border: none;
+    color:cornsilk;
+    font-size: 12pt;
+    outline: none;
+    outline-color: aqua;    
+}
