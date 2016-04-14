@@ -4,7 +4,7 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $query = mysqli_query($koneksi1,"select * from admin where nama='$username' and password='$password'");
+    $query = mysqli_query($koneksi1,"select * from admin where nama='$username' and passwd='$password'");
     //$cocok = mysqli_num_rows($query);
     if($query){
         $_SESSION['username'] = $username;
