@@ -9,7 +9,7 @@
     if($query){
         $_SESSION['username'] = $username;
         $_SESSION['password'] = $password;
-        header("location: tampil.php");
+        header("location: adminmenu.php");
     }
     else{
         echo "<script> alert('Username atau Password salah !') </script>";
