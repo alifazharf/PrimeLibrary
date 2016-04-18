@@ -1,13 +1,13 @@
 <?php
     include "koneksi.php";
-    $id = $_GET['hapusadmin'];
-    $hapus = "delete from buku where ISBN='$id'";
+    $id = $_GET['hapus'];
+    $hapus = "delete from admin where id_admin='$id'";
     $hasil = mysqli_query($koneksi1,$hapus);
     if($hasil){
         echo "
             <script>
                 alert('data terhapus');
-                window.location='/adminmenu.php';
+                window.location='/adminmenu.php?page=admin';
             </script>
         ";
     }

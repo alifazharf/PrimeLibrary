@@ -10,6 +10,7 @@
 <html>
 <head>
 	<title>Prime Library</title>
+	<link rel="stylesheet" href="animate.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<!-- jQuery library -->
@@ -34,17 +35,17 @@
 		      <a class="navbar-brand" >PrimeLibrary</a>
 		    </div>
 		    <ul class="nav navbar-nav">
-		      <li><a href="?page=buku">Buku</a></li>
-		      <li><a href="?page=admin">Admin</a></li>
-		      <li><a href="?page=anggota">Anggota</a></li> 
-		      <li><a href="?page=peminjaman">Peminjaman</a></li>
-		      <li><a href="?page=pengembalian">Pengembalian</a></li>
-		      <li><a href="?page=hilang">Buku Hilang</a></li>
-		      <li><a href="?page=pelaporan">Pelaporan</a></li> 
+		      <li><a href="/adminmenu.php?page=buku">Buku</a></li>
+		      <li><a href="/adminmenu.php?page=admin">Admin</a></li>
+		      <li><a href="/adminmenu.php?page=anggota">Anggota</a></li> 
+		      <li><a href="/adminmenu.php?page=peminjaman">Peminjaman</a></li>
+		      <li><a href="/adminmenu.php?page=Pengadaan">Pengadaan</a></li>
+		      <li><a href="/adminmenu.php?page=hilang">Buku Hilang</a></li>
+		      <li><a href="/adminmenu.php?page=pelaporan">Pelaporan</a></li> 
 		    </ul>
 			<ul class="nav navbar-nav navbar-right">
-		      <li><a><?php echo "Halo, ".$_SESSION['username']; ?></a></li>
-		      <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+		      <li><a><?php echo "Halo, ".$_SESSION['username']."(".$_SESSION['id_admin'].")"; ?></a></li>
+		      <li><a href="/logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 		    </ul>
 		  </div>
 		</nav>
@@ -62,23 +63,23 @@
 					break;
 
 				case 'admin':
-					echo "olah data admin";
+					include "odadmin.php";
 					break;
 
 				case 'anggota':
-					echo "oldah data ";
+					include "odanggota.php";
 					break;
 
 				case 'peminjaman':
-					echo "peminjaman";
+					include "odpeminjaman.php";
 					break;
 
-				case 'pengembalian':
-					echo "pengembalian";
+				case 'Pengadaan':
+					include "Pengadaan.php";
 					break;
 
 				case 'hilang':
-					echo "hilang";
+					include "bukuhilang.php";
 					break;
 
 				case 'pelaporan':

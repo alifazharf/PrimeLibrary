@@ -16,13 +16,13 @@
             ";
     }
     else{
-        $input = "insert into buku values('$isbn','$tahun_terbit','$penerbit','$penulis','$judul',CURDATE(),true)";
+        $input = "insert into buku values('$isbn','$tahun_terbit','$penerbit','$penulis','$judul',CURDATE(),true);";
         $hasil = mysqli_query($koneksi1,$input);
         if($hasil){
             echo "
                 <script>
                     alert('Data berhasil dimasukkan :D');
-                    window.location='adminmenu.php';
+                    window.location='/adminmenu.php';
                 </script>
             ";
         }
@@ -31,7 +31,7 @@
             echo "
                 <script>
                     alert('data gagal dimasukkan :(');
-                    window.location='adminmenu.php';
+                    window.location='/adminmenu.php';
                 </script>
             ";
         }
