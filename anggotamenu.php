@@ -36,7 +36,7 @@
             </div>
             <ul class="nav navbar-nav">
               <li><a href="/anggotamenu.php?page=buku">Buku</a></li> 
-              <li><a href="/anggotamenu.php?page=peminjaman">Peminjaman</a></li> 
+              <li><a href="/anggotamenu.php?page=peminjaman">Buku Yang Dipinjam</a></li> 
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a><?php echo "Halo, ".$_SESSION['usernamea']; ?></a></li>

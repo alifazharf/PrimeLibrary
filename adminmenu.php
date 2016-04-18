@@ -83,7 +83,7 @@
 					break;
 
 				case 'pelaporan':
-					echo "pelaporan";
+					include "pelaporan.php";
 					break;
 				
 				default:

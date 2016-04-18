@@ -17,7 +17,7 @@
     }
     else{
         echo "<script> alert('Username atau Password salah !');
-        window.location = '/formlogin.html'
+        window.location = '/'
          </script>";
     }
 

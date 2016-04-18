@@ -1,10 +1,13 @@
 <body>
     <div class='row'>
-    <div class='col-sm-8'>
+    <div class='col-sm-12'>
     <div class='table-responsive'>
+    <div class="panel panel-default">
+    <div class="panel-heading">Daftar Informasi Buku Tersedia</div>
+    <div class="panel-body">
     <table class='table table-striped'>
 <?php
-    $tampil = "select * from buku";
+    $tampil = "select * from buku where tersedia = true";
     $hasil = mysqli_query($koneksi1,$tampil);
     echo "
         <thead>
@@ -35,6 +38,9 @@
         </tbody>";
 ?>
     </table>
+    </div>
+    </div>
+    </div>
     </div>
     </div>
     </div>
