@@ -47,11 +47,9 @@
     </div>
     </div>
 <!-- Trigger the modal with a button -->
-<div class="row">
     <div class="col-sm-12">
         <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Tambah Buku</button>
     </div>
-</div>
     </div>    
     <?php
         if (isset($_GET['editadmin'])) {

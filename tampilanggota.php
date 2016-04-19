@@ -23,16 +23,19 @@
         </thead>
         <tbody>";
     while ($data=mysqli_fetch_assoc($hasil)){
-        echo"
-            <tr>
-                <td>".$data['ISBN']."</td>
-                <td>".$data['judul']."</td>
-                <td>".$data['penulis']."</td>
-                <td>".$data['penerbit']."</td>
-                <td>".$data['tahun_terbit']."</td>
-                <td>".$data['tanggal_impor']."</td>
-                <td>".$data['tersedia']."</td>
-            </tr>";
+            echo "<tr>";
+                echo "<td>".$data['ISBN']."</td>";
+                echo "<td>".$data['judul']."</td>";
+                echo "<td>".$data['penulis']."</td>";
+                echo "<td>".$data['penerbit']."</td>";
+                echo "<td>".$data['tahun_terbit']."</td>";
+                echo "<td>".$data['tanggal_impor']."</td>";
+                if ($data['tersedia']){
+                    echo "<td>Ya</td>";
+                } else {
+                    echo "<td>Tidak</td>";
+                }
+            echo "</tr>";
     }
     echo "
         </tbody>";
